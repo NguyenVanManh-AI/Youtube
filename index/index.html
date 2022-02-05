@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="SHORTCUT ICON" type="text/css" href="../logo.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<!-- font roboto -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../sidebar.css">
+
+
+	<!-- RIÊNG -->
+	<link rel="stylesheet" type="text/css" href="styleindex.css">
+	<!-- RIÊNG -->
+
+
+	<!-- jquery  -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	<!-- jquery  -->
+
+	<!-- dvcentrturizma icon font -->
+	<!-- <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"> -->
+	<!-- icofont icon  -->
+	<!-- <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css"> -->
+
+
+
+	<title>YouTube</title>
+</head>
+<body>
+
+	<header>
+			<button id="btn-menu1" class="left-icon btn-menu"><i class="fal fa-bars"></i></button>
+			<div class="logo"><a href="index.html"><img src="../img/logo.jpg"></a></a><span>VN</span></div>
+			<form>
+				<div id="bg2"></div>
+				<div id="formdiv">
+					<input type="text" name="" placeholder="Tìm kiếm" id="input">
+					<span id="show-keyboard"><img src="../img/keyboard.png"></span>
+					<ul id="historyul" class="hidden"> 
+						<!-- <li><a href=""> frontend <span>Xóa</span></a></li>
+                        <li><a href=""> lập trình php laravel <span>Xóa</span></a></li>
+                        <li><a href=""> fullstack php laravel <span>Xóa</span></a></li>
+                        <li><a href=""> lập trình viên tv <span>Xóa</span></a></li>
+                        <li><a href=""> docker deploy và run application với container<span>Xóa</span></a></li>
+                        <li><a href=""> git github nâng cao branch git command<span>Xóa</span></a></li>
+                        <li><a href=""> spider man noway home<span>Xóa</span></a></li> -->
+					</ul>
+				</div>
+				<button type="submit" class="icon-header"><img src="../img/search.png"></button>
+				<div id="bg10" class="hidden"></div>
+				<div class="hidden" id="keyboard"> 
+					<!-- đoạn này có thể tối ưu bằng js -->
+					<li>
+						<span>Tiếng Việt Telex</span>
+						<span id="close-keyboard">&times; </span></li>
+					<li>
+						<button>`</button> <button>1</button> <button>2</button> <button>3</button> <button>4</button> <button>5</button>
+						<button>6</button> <button>7</button> <button>8</button> <button>9</button> <button>0</button> <button>-</button>
+						<button>=</button> <button id="btn-delete"><img src="../img/delete.png"></button>
+					</li>
+					<li>
+						<button>q</button> <button>w</button> <button>e</button> <button>r</button> <button>t</button> <button>y</button>
+						<button>u</button> <button>i</button> <button>o</button> <button>p</button> <button>[</button> <button>]</button>
+						<button id="btn-a-1">\</button>
+					</li>
+					<li>
+						<button id="btn-a-2"><img src="../img/home-key.png"></button> <button>a</button> <button>s</button> <button>d</button> 
+						<button>f</button> <button>g</button> <button>h</button> <button>j</button> <button>k</button> <button>l</button> 
+						<button>;</button> <button>'</button>
+					</li>
+					<li>
+						<button id="capslock1"><img src="../img/caps-lock.png"></button> <button>z</button> <button>x</button> <button>c</button> 
+						<button>v</button> <button>b</button> <button>n</button> <button>m</button> <button>,</button> 
+						<button>.</button> <button>/</button> <button id="capslock2"><img src="../img/caps-lock.png"></button>
+					</li>
+					<li>
+						<button class="ctrl-alt">Ctrl + Alt</button> <button id="space"> </button> <button class="ctrl-alt">Ctrl + Alt</button>
+					</li>
+				</div>
+				<!-- Ẩn hiện bàn phím ảo -->
+				
+				<style type="text/css">
+					#bg10{
+						position: fixed;
+					    width: 620px;
+					    height: 240px;
+					    bottom: 0px;
+					    right: 0px;
+					    background-color:transparent;
+					}
+				</style>
+				<script type="text/javascript"> // để đoạn script này bên nào cũng được , không ảnh hưởng gì nha 
+					var showKeyboard = document.getElementById('show-keyboard');
+					var closeKeyboard = document.getElementById('close-keyboard');
+					var keyboard = document.getElementById('keyboard');
+					var bg10 = document.getElementById('bg10');
+					console.log(bg10);
+					showKeyboard.onclick = () => {
+						if(keyboard.classList.contains('hidden')==true){
+							keyboard.classList.remove('hidden');
+							document.getElementById('bg10').classList.remove('hidden');
+						}
+						else{
+							keyboard.classList.add('hidden');
+							document.getElementById('bg10').classList.add('hidden');
+						}
+					}
+					closeKeyboard.onclick = (event) => {
+						event.preventDefault();
+						keyboard.classList.add('hidden');
+						document.getElementById('bg10').classList.add('hidden');
+					}
+				</script>
+
+				<!-- Bàn phím ảo -->
+				<script type="text/javascript"> // để đoạn script này bên nào cũng được , không ảnh hưởng gì nha 
+					// var buttons = document.querySelectorAll('#keyboard button:not(#btn-delete');
+					// var valueinput = document.getElementById('input');
+					// var btndeletevalue = document.getElementById('btn-delete');
+					// buttons.forEach(button => {
+					// 	button.onmousedown = () => {
+					// 		button.style.color = 'red';
+					// 		button.style.border = '1px solid red';
+					// 	}
+					//     button.onclick = (event) => {
+					//     	button.style.color='#444444';
+					// 	    button.style.border='1px solid #e8e8e8';
+					//     	event.preventDefault();
+					//     	if(event.target.getAttribute("id")=='space'){
+					// 		    valueinput.value=valueinput.value+' ';
+					//     	}
+					//     	else {
+					// 		    valueinput.value=valueinput.value+button.innerText;
+					//     	}
+					//     }
+				 //    })
+
+				 //    btndeletevalue.onmousedown = () => {
+					// 		btndeletevalue.style.color = 'red';
+					// 		btndeletevalue.style.border = '1px solid red';
+					// 	}
+				 //    btndeletevalue.onclick = (event) => {
+					//     valueinput.value = valueinput.value.substring(0,valueinput.value.length -1);
+				 //    	btndeletevalue.style.color='#444444';
+					//     btndeletevalue.style.border='1px solid #e8e8e8';
+
+				 //    }
+				</script>
+			</form>
+
+			<button class="icon-header2" id="voice"><img src="../img/voice-search.png"></button>
+				<!-- ẨN HIỆN MICRO -->
+				<div id="bg4"  class="hidden"></div>
+				<div id="divmicro" class="hidden">
+					<button ><i class="fal fa-times"></i></button>
+					<p id="divmicro-p1">Tìm kiếm bằng giọng nói </p>
+					<p id="divmicro-p2">Để tìm kiếm bằng giọng nói, hãy chuyển đến phần cài đặt trong trình duyệt của bạn và cho phép truy cập vào micrô</p>
+					<li><a href=""><i class="fas fa-microphone"></i></a></li>
+				</div>
+			<div id="header-right">
+				<button class="icon-header2" id="add-video"><img src="../img/add-video-camera.png"></button>
+					<!-- Ẩn hiện add video -->
+					<div id="bg5" class="hidden"></div>
+					<div id="div-add-video" class="divprofile3-nth div-sub-nth hidden">
+						<ul>
+							<li><a href=""><img src="../img/video.png"> Tải video lên</a></li>
+							<li><a href=""><img src="../img/radio-signal.png"> Phát trực tiếp</a></li>
+						</ul>
+					</div>
+				<button class="icon-header2" id="menu-app"><img src="../img/app-menu.png"></button>
+					<!-- Ẩn hiện menu app -->
+					<div id="bg6" class="hidden"></div>
+					<div id="div-menu-app" class="menu-app hidden">
+						<ul>
+							<li><a href=""><span><img src="../img/youtube-tv.png"></span>YouTube TV</a></li>
+							<li><a href=""><span><img src="../img/youtube-music.png"></span>YouTube Music</a></li>
+							<li><a href=""><span><img src="../img/youtube-kid.png"></span>YouTube Kids</a></li>
+							<li><a href=""><span><img src="../img/youtube-singer.png"></span>YouTube dành cho Nghệ sĩ</a></li>
+						</ul>
+					</div>
+				<button class="icon-header2" id="bell"><img src="../img/bell.png"></button>
+					<div id="bg7" class="hidden"></div>
+					<div id="div-bell" class="hidden">
+						<p>Thông báo <span><i class="fal fa-cog"></i></span></p>
+						<ul>
+							<li>
+								<a href="" class="bell-link">
+									<img src="../img/coding-lab.jpg" class="img-bell-1">
+									<div class="div-bell-div">
+										<p>CodingLab đã tải lên: How to make Card Slider in HTML CSS & JavaScript | Owl Carousel</p>
+										<span>1 giờ trước</span>
+									</div>
+									<img src="../img/coding-lab2.jpg" class="img-bell-2">
+									<div class="bg8"></div>
+									<button class="btn-bell">
+										<i class="fas fa-ellipsis-v"></i>
+										<div>
+											<ul class="bell-ul">
+												<li class="div-bell-li"><img src="../img/hide.png"><span>Ẩn thông báo này</span></li>
+												<li class="div-bell-li"><span>Tắt tất cả thông báo từ kênh này</span></li>
+											</ul>
+										</div>
+									</button>
+								</a>
+							</li>
+
+							<li>
+								<a href="" class="bell-link">
+									<img src="../img/joma-tech.jpg" class="img-bell-1">
+									<div class="bg8"></div>
+									<div class="div-bell-div">
+										<p>Joma Tech đã tải lên: I quit my job at Google, here's what's next...</p>
+										<span>5 giờ trước</span>
+									</div>
+									<img src="../img/joma-tech2.jpg" class="img-bell-2">
+									<div class="bg8"></div>
+									<button class="btn-bell">
+										<i class="fas fa-ellipsis-v"></i>
+										<div>
+											<ul class="bell-ul">
+												<li class="div-bell-li"><img src="../img/hide.png"><span>Ẩn thông báo này</span></li>
+												<li class="div-bell-li"><span>Tắt tất cả thông báo từ kênh này</span></li>
+											</ul>
+										</div>
+									</button>
+								</a>
+							</li>
+
+							<li>
+								<a href="" class="bell-link">
+									<img src="../img/freecode.jpg" class="img-bell-1">
+									<div class="bg8"></div>
+									<div class="div-bell-div">
+										<p>freeCodeCamp.org đã tải lên: React & TypeScript - Course for Beginners</p>
+										<span>10 giờ trước</span>
+									</div>
+									<img src="../img/freecode2.jpg" class="img-bell-2">
+									<div class="bg8"></div>
+									<button class="btn-bell">
+										<i class="fas fa-ellipsis-v"></i>
+										<div>
+											<ul class="bell-ul">
+												<li class="div-bell-li"><img src="../img/hide.png"><span>Ẩn thông báo này</span></li>
+												<li class="div-bell-li"><span>Tắt tất cả thông báo từ kênh này</span></li>
+											</ul>
+										</div>
+									</button>
+								</a>
+							</li>
+
+							<li>
+								<a href="" class="bell-link">
+									<img src="../img/evon-dev.jpg" class="img-bell-1">
+									<div class="bg8"></div>
+									<div class="div-bell-div">
+										<p>evondev đã tải lên: Những cách làm center phổ biến trong CSS mà bạn nên biết</p>
+										<span>20 giờ trước</span>
+									</div>
+									<img src="../img/evon-dev2.jpg" class="img-bell-2">
+									<div class="bg8"></div>
+									<button class="btn-bell">
+										<i class="fas fa-ellipsis-v"></i>
+										<div>
+											<ul class="bell-ul">
+												<li class="div-bell-li"><img src="../img/hide.png"><span>Ẩn thông báo này</span></li>
+												<li class="div-bell-li"><span>Tắt tất cả thông báo từ kênh này</span></li>
+											</ul>
+										</div>
+									</button>
+								</a>
+							</li>
+
+							<li>
+								<a href="" class="bell-link">
+									<img src="../img/snc.jpg" class="img-bell-1">
+									<div class="bg8"></div>
+									<div class="div-bell-div">
+										<p>Son Nguyen đã tải lên: Chuỗi video hướng dẫn viết game pokemon trên blockchain - khởi tạo contract pokemon | phần 1</p>
+										<span>1 ngày trước</span>
+									</div>
+									<img src="../img/snc2.jpg" class="img-bell-2">
+									<div class="bg8"></div>
+									<button class="btn-bell">
+										<i class="fas fa-ellipsis-v"></i>
+										<div>
+											<ul class="bell-ul">
+												<li class="div-bell-li"><img src="../img/hide.png"><span>Ẩn thông báo này</span></li>
+												<li class="div-bell-li"><span>Tắt tất cả thông báo từ kênh này</span></li>
+											</ul>
+										</div>
+									</button>
+								</a>
+							</li> 
+
+							<li>
+								<a href="" class="bell-link">
+									<img src="../img/code-dao.jpg" class="img-bell-1">
+									<div class="bg8"></div>
+									<div class="div-bell-div">
+										<p>Phạm Huy Hoàng đang phát trực tiếp: Kiếm tiền nhờ Lập Trình Di Động (Android, iOS) trên Google Play và AppStore</p>
+										<span>2 ngày trước</span>
+									</div>
+									<img src="../img/code-dao2.jpg" class="img-bell-2">
+									<div class="bg8"></div>
+									<button class="btn-bell">
+										<i class="fas fa-ellipsis-v"></i>
+										<div>
+											<ul class="bell-ul">
+												<li class="div-bell-li"><img src="../img/hide.png"><span>Ẩn thông báo này</span></li>
+												<li class="div-bell-li"><span>Tắt tất cả thông báo từ kênh này</span></li>
+											</ul>
+										</div>
+									</button>
+								</a>
+							</li>
+
+							<li>
+								<a href="" class="bell-link">
+									<img src="../img/evon-dev.jpg" class="img-bell-1">
+									<div class="bg8"></div>
+									<div class="div-bell-div">
+										<p>evondev đã tải lên: Tips giúp bạn code giao diện được nhanh hơn</p>
+										<span>3 ngày trước</span>
+									</div>
+									<img src="../img/evon-dev3.jpg" class="img-bell-2">
+									<div class="bg8"></div>
+									<button class="btn-bell">
+										<i class="fas fa-ellipsis-v"></i>
+										<div>
+											<ul class="bell-ul">
+												<li class="div-bell-li"><img src="../img/hide.png"><span>Ẩn thông báo này</span></li>
+												<li class="div-bell-li"><span>Tắt tất cả thông báo từ kênh này</span></li>
+											</ul>
+										</div>
+									</button>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+				<button id="profile"><img src="../img/profile.jpg"></button>
+				<div id="bg3"></div>
+				<div id="divprofile">
+					<div id="divprofile2">
+						<div id="divprofile3">
+							<div id="top-divprofile">
+								<img src="../img/profile.jpg" >
+								<p> 
+									<span>Nguyễn Văn Mạnh</span>
+									<a href="">Quản lí Tài khoản Google của bạn</a>
+								</p>
+							</div>
+							<div style="height: 494px;overflow-x: hidden;overflow-y: scroll;" id="divmain">
+								<div class="divprofile3-nth">
+									<ul>
+										<li><a href=""><img src="../img/account-user.png"> Kênh của bạn</a></li>
+										<li><a href=""><img src="../img/money.png"> Giao dịch mua và gói thành viên</a></li>
+										<li><a href=""><img src="../img/setting-video.png"> Creator Studio</a></li>
+										<li id="li-main1"><a href=""><img src="../img/account-group.png"> Chuyển đổi tài khoản<img src="../img/next.png"></a></li>
+										<li><a href=""><img src="../img/login.png">Đăng xuất</a></li>
+									</ul>
+								</div>
+								<div class="divprofile3-nth">
+									<ul>
+										<li id="li-main2"><a href=""><img src="../img/moon.png">Giao diện: Giao diện thiết bị<img src="../img/next.png"></a></li>
+										<li id="li-main3"><a href=""><img src="../img/language.png">Ngôn ngữ: Tiếng Việt<img src="../img/next.png"></a></li>
+										<li id="li-main4"><a href=""><img src="../img/world.png">Địa điểm: Việt Nam<img src="../img/next.png"></a></li>
+										<li><a href=""><img src="../img/setting.png">Cài đặt</a></li>
+										<li><a href=""><img src="../img/shield-user.png">Dữ liệu của bạn trong YouTube</a></li>
+										<li><a href=""><img src="../img/ask.png">Trang web dành cho thiết bị di động</a></li>
+										<li><a href=""><img src="../img/feedback.png">Trợ giúp</a></li>
+										<li><a href=""><img src="../img/keyboard2.png">Gửi phản hồi</a></li>
+									</ul>
+								</div>
+								<div class="divprofile3-nth">
+									<ul>
+										<li id="li-main5"><a href=""><img src="" style="margin-right:0px">Chế độ hạn chế: Đã tắt<img src="../img/next.png"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div id="div-sub1" class="div-sub">
+							<div class="back">
+								<li><a href="" id="a-sub1" class="a-sub" ><img src="../img/back.png"></a><span>Tài khoản</span></li>
+							</div>
+							<div id="div-sub1-2">
+								<ul>
+									<li>
+										<p>Nguyễn Văn Mạnh</p>
+										<p>toi@laptrinhfullstack.laravel-vuejs.com</p>
+									</li>
+									<li>
+										<a href="">
+											<img src="../img/profile.jpg">
+											<p>
+												<span>Nguyễn Văn Mạnh</span>
+												<span>299 N người đăng ký</span>
+											</p>
+											<img src="../img/accept.png" id="div-sub1-2-img" >
+										</a>
+									</li>
+									<li><a href="">Xem tất cả kênh</a></li>
+								</ul>
+							</div>
+
+							<div id="div-sub1-3">
+								<h6>Các tài khoản khác</h6>
+								<li>
+									<p>nguyenvanmanh2908.it@fullstack.com</p>
+									<a href=""><img src="../img/fullstack-dev.jpg"><p><span>Fullstack developer</span><span>70 N người đăng ký</span></p></a>
+								</li>
+								<li>
+									<p>software.it@coder.com</p>
+									<a href=""><img src="../img/codermientrung.jpg"><p><span>Coder Miền Trung</span><span>500 N người đăng ký</span></p></a>
+								</li>
+								<li>
+									<p>docker.it@gmail.com</p>
+									<a href=""><img src="../img/docker.jpg"><p><span>Docker</span><span>396 N người đăng ký</span></p></a>
+								</li>
+								<li>
+									<p>laravel.it@php.com</p>
+									<a href=""><img src="../img/laravel.png"><p><span>Laravel</span><span>70 N người đăng ký</span></p></a>
+								</li>
+								<li>
+									<p>vuejs.it@php.com</p>
+									<a href=""><img src="../img/vuejs.png"><p><span>Vuejs</span><span>Không có kênh</span></p></a>
+								</li>
+								<li>
+									<p>yearbook.it@12b1.com</p>
+									<a href=""><img src="../img/yearbook.jpg"><p><span>Year book</span><span>Không có kênh</span></p></a>
+								</li>
+
+							</div>
+							<div class="divprofile3-nth" id="div-sub1-4">
+								<li><a href=""><img src="../img/add-account.png">Thêm tài khoản</a></li>
+								<li><a href=""><img src="../img/login.png">Đăng xuất</a></li>
+							</div>
+						</div>
+
+
+
+						<div id="div-sub2" class="div-sub">
+							<div class="back">
+								<li><a href="" id="a-sub2" class="a-sub" ><img src="../img/back.png"></a><span>Giao diện</span></li>
+							</div>
+							<div class="divprofile3-nth div-sub-nth" >
+								<p>Tùy chọn cài đặt chỉ áp dụng cho trình duyệt này</p>
+								<ul>
+									<li class="div-sub2-li"><a href=""><img src="../img/accept.png" class="div-sub2-img" style="display:block;"><span>Dùng giao diện của thiết bị</span></a></li>
+									<li class="div-sub2-li"><a href=""><img src="../img/accept.png" class="div-sub2-img"><span>Giao diện tối</span></a></li>
+									<li class="div-sub2-li"><a href=""><img src="../img/accept.png" class="div-sub2-img"><span>Giao diện sáng</span></a></li>
+								</ul>
+							</div>
+
+						</div>
+						<div id="div-sub3" class="div-sub">
+							<div class="back">
+								<li><a href="" id="a-sub3" class="a-sub" ><img src="../img/back.png"></a><span>Ngôn ngữ của bạn</span></li>
+							</div>
+							<div class="divprofile3-nth div-sub-nth" id="div-sub3-div">
+								<ul>
+									<!-- TỐI ƯU BẰNG TẠO THẺ BẰNG JS , KHÔNG TẠO BẰNG HTML -->
+								</ul>
+							</div>
+						</div>
+								
+						<div id="div-sub4" class="div-sub">
+							<div class="back">
+								<li><a href="" id="a-sub4" class="a-sub" ><img src="../img/back.png"></a><span>Chọn vị trí của bạn</span></li>
+							</div>
+							<div class="divprofile3-nth div-sub-nth" id="div-sub4-div">
+								<ul>
+									<!-- TỐI ƯU BẰNG TẠO THẺ BẰNG JS , KHÔNG TẠO BẰNG HTML -->
+								</ul>
+							</div>
+						</div>
+						
+						<div id="div-sub5" class="div-sub">
+							<div class="back">
+								<li><a href="" id="a-sub5" class="a-sub"><img src="../img/back.png"></a><span>Chế độ hạn chế</span></li>
+							</div>
+							<div id="div-sub5-2">
+								<p>Chế độ này giúp ẩn các video có thể chứa nội dung dành cho người trưởng thành. Tuy nhiên, không có bộ lọc nào là chính xác 100%.</p>
+								<p>Tùy chọn cài đặt này chỉ áp dụng cho trình duyệt này.</p>
+								<li>
+									<h5>KÍCH HOẠT CHẾ ĐỘ HẠN CHẾ</h5>
+									<label id="label146">
+								     	<input type="checkbox" name="">
+								     	<span></span>
+								    </label>
+								</li>
+							</div>
+						</div>
+
+
+
+
+						
+
+
+
+					</div>
+				</div>
+			</div>
+	</header>
+
+	<div>
+		<div id="bg"></div>
+		<div id="sidebar">
+			<div id="sidebar-top">
+				<button id="btn-menu2" class="left-icon btn-menu"><i class="fal fa-bars"></i></button>
+				<div class="logo"><a href="index.html"><img src="../img/logo.jpg"></a><span>VN</span></div>
+			</div>
+			<div id="side-content">
+				<div class="sidebar-nth">
+					<ul>
+						<li><a href="index.html"><img src="../img/home.png"> Trang chủ</a></li>
+						<li><a href="../explore/explore.html"><img src="../img/compass.png"> Khám phá</a></li>
+						<li><a href="../subscriptions/subscriptions.html"><img src="../img/subscriptions.png"> Kênh đăng kí</a></li>
+					</ul>
+				</div>
+
+				<hr>
+
+				<div class="sidebar-nth">
+					<ul>
+						<li><a href="../library/library.html"><img src="../img/video-library.png"> Thư viện</a></li>
+						<li><a href="../history/history.html"><img src="../img/history.png"> Video đã xem</a></li>
+						<li><a href="../myvideo/myvideo.html"><img src="../img/video.png"> Video của bạn</a></li>
+						<li><a href="../playlist/playlist.html"><img src="../img/clock.png"> Xem sau</a></li>
+						<li><a href="../liked/liked.html"><img src="../img/like.png"> Video đã thích</a></li>
+					</ul>
+				</div>
+				<div class="sidebar-nth hidden" id="sidebar-hidden">
+					<ul>
+						<!-- tạo thẻ bằng js dòng : 30-39 -->
+						<!-- <li><a href="../list/Marvel.html"><img src="../img/playlist-play.png"> Marvel</a></li>
+						<li><a href="../list/TRAILER ANIME.html"><img src="../img/signal-play.png"> TRAILER ANIME</a></li>
+						<li><a href="../list/Đen vâu.html"><img src="../img/playlist-play.png"> Đen vâu</a></li>
+						<li><a href="../list/Thanh Gươm Diệt Quỷ.html"><img src="../img/signal-play.png">Thanh Gươm Diệt..</a></li>
+						<li><a href="../list/Lập trình viên TV.html"><img src="../img/playlist-play.png"> Lập trình viên TV</a></li>
+						<li><a href="../list/Tôi đi code dạo.html"><img src="../img/playlist-play.png"> Tôi đi code dạo</a></li>
+						<li><a href="../list/BLACKPINK.html"><img src="../img/playlist-play.png"> BLACKPINK</a></li>
+						<li><a href="../list/Phim chiếu rạp 2022.html"><img src="../img/signal-play.png"> Phim chiếu rạp 2022</a></li>
+						<li><a href="../list/Nguyễn Văn Mạnh.html"><img src="../img/playlist-play.png"> Nguyễn Văn Mạnh</a></li>
+						<li><a href="../list/FullStack Dev.html"><img src="../img/playlist-play.png"> FullStack Dev</a></li>
+						<li><a href="../list/Vuejs Laravel.html"><img src="../img/playlist-play.png"> Vuejs Laravel</a></li> -->
+					</ul>
+				</div>
+				<button id="show-more" class="more"><img src="../img/show-more.png"> Thêm</button>
+
+				<hr>
+
+				<div class="sidebar-nth borderradius">
+					<h4 style="padding-top: 6px;">KÊNH ĐĂNG KÍ</h4>
+					<ul>
+						<!-- có thời gian sẽ code riêng các file .html trong folder channels , tạm thời cứ dùng link để link tới youtube đã-->
+						<li><a href="../channels/lap-trinh-vien-tv.html"><img src="../img/lap-trinh-vien-tv.jpg">Lập trình viên TV</a></li>
+						<li><a href="https://www.youtube.com/c/FAPtivi"><img src="../img/faptv.jpg">FAP TV</a></li>
+						<li><a href="../channels/toi-di-code-dao.html"><img src="../img/toi-di-code-dao.jpg">Phạm Huy Hoàng</a></li>
+						<li><a href="https://www.youtube.com/c/popskids"><img src="../img/pop-kid.jpg">POPS Kids</a></li>
+						<li><a href="https://www.youtube.com/c/JomaOppa"><img src="../img/joma-tech.jpg">Joma Tech</a></li>
+						<li><a href="https://www.youtube.com/c/Ph%C3%AAPhim"><img src="../img/phe-phim.jpg">Phê Phim</a></li>
+						<li><a href="https://www.youtube.com/c/vtv24"><img src="../img/vtv24.jpg">VTV24 </a></li>
+					</ul>
+				</div>
+				<div class="sidebar-nth hidden borderradius" id="sidebar-hidden2">
+					<ul>
+						<!-- tạo thẻ bằng js dòng : 58-76 -->
+
+					</ul>
+				</div>
+				<div class="sidebar-nth borderradius hidden" id="addchannels">
+					<ul><li><a href="../channels/add.html"><img src="../img/add.png"> Xem qua các kênh</a></li></ul>
+				</div>
+				<button id="show-more2" class="more"><img src="../img/show-more.png"><span id="span"></span></button>
+
+				<hr>
+
+				<div class="sidebar-nth">
+					<h4>DỊCH VỤ KHÁC CỦA YOUTUBE</h4>
+					<ul>
+						<li><a href="../service/controller.html"><img src="../img/controller.png"> Trò chơi</a></li>
+						<li><a href="../service/radio-signal.html"><img src="../img/radio-signal.png"> Sự kiện trực tiếp</a></li>
+						<li><a href="../service/champion.html"><img src="../img/champion.png"> Thể thao</a></li>
+					</ul>
+				</div>
+
+				<hr>
+
+				<div class="sidebar-nth">
+					<ul>
+						<li><a href="../service/setting.html"><img src="../img/setting.png">Cài đặt</a></li>
+						<li><a href="../service/flag.html"><img src="../img/flag.png">Lịch sử báo cáo</a></li>
+						<li><a href="../service/ask.html"><img src="../img/ask.png">Trợ giúp</a></li>
+						<li><a href="../service/feedback.html"><img src="../img/feedback.png">Gửi phản hồi</a></li>
+					</ul>
+				</div>
+
+				<hr>
+
+				<div id="footer">
+					<a href="../footer/gioithieu.html">Giới thiệu</a>
+					<a href="../footer/baochi.html">Báo chí</a>
+					<a href="../footer/banquyen.html">Bản quyền</a>
+					<a href="../footer/lienhe.html">Liên hệ với chúng tôi</a>
+					<a href="../footer/sangtao.html">Người sáng tạo</a>
+					<a href="../footer/quangcao.html">Quảng cáo</a>
+					<a href="../footer/phattrien.html">Nhà phát triển</a>
+					<br><br>
+					<a href="../footer/dieukhoan.html">Điều khoản</a>
+					<a href="../footer/riengtu.html">Quyền riêng tư</a>
+					<a href="../footer/antoan.html">Chính sách và an toàn</a>
+					<a href="../footer/hoatdong.html">Cách YouTube hoạt động</a>
+					<a href="../footer/tinhnang.html">Thử các tính năng mới</a>
+
+					<br><br>
+					<span>© 2022 Google LLC</span>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style='width: 100%;height: 500px;background-color: white;display: flex;'>
+		<div class="side-menu" style="width: 72px;">
+			<ul>
+				<li><a href="index.html"><img src="../img/home.png"> Trang chủ</a></li>
+				<li><a href="../explore/explore.html"><img src="../img/compass.png"> Khám phá</a></li>
+				<li><a href="../subscriptions/subscriptions.html"><img src="../img/subscriptions.png"> Kênh đăng kí</a></li>
+				<li><a href="../library/library.html"><img src="../img/video-library.png"> Thư viện</a></li>
+			</ul>
+		</div>
+		<div id="body-content">
+
+
+
+
+			<!-- RIÊNG -->
+
+			<div id="header-bottom">
+				<ul>
+					<li class="color-li" tickk="li-content1">Tất cả</li>
+					<li class="color-li" tickk="li-content2">Danh sách kết hợp</li>
+					<li class="color-li" tickk="li-content3">Âm nhạc</li>
+					<li class="color-li" tickk="li-content4">Hoạt hình</li>
+					<li class="color-li" tickk="li-content5">Toán học</li>
+					<li class="color-li" tickk="li-content6">Mới tải lên gần </li>
+					<li class="color-li" tickk="li-content7">Trực tiếp</li>
+					<li class="color-li" tickk="li-content8">Đã xem</li>
+					<li class="color-li" tickk="li-content9">Đề xuất mới</li>
+				</ul>
+			</div>
+			<div id="content-main">
+				<div id="two-main">
+					<div id="li-content1" class="main-hide">
+						<ul>
+
+							<!-- Tối ưu bằng js -->
+							 
+						</ul>
+					</div>
+					<div id="li-content2" class="main-hide">
+						<ul>
+							
+							<!-- Tối ưu bằng js -->
+
+						</ul>
+					</div>
+					<div id="li-content3" class="main-hide">
+						<ul>
+
+							<!-- Tối ưu bằng js -->
+							
+						</ul>
+					</div>
+					<div id="li-content4" class="main-hide">
+						<ul>
+
+							<!-- Tối ưu bằng js -->
+
+						</ul>
+					</div>
+					<div id="li-content5" class="main-hide">
+						<ul>
+
+							<!-- Tối ưu bằng js -->
+
+						</ul>
+					</div>
+					<div id="li-content6" class="main-hide">
+						<ul>
+
+							<!-- Tối ưu bằng js -->
+
+						</ul>
+					</div>
+					<div id="li-content7" class="main-hide">
+						<ul>
+
+							<!-- Tối ưu bằng js -->
+
+						</ul>
+					</div>
+					<div id="li-content8" class="main-hide">
+						<ul>
+
+							<!-- Tối ưu bằng js -->
+
+						</ul>
+					</div>
+					<div id="li-content9" class="main-hide">
+						<ul>
+
+							<!-- Tối ưu bằng js -->
+
+						</ul>
+					</div>
+				</div>
+				<div id="watch-content">
+					<div id="watch-content-inner">
+						<div id="watch-content-video">
+
+
+
+							<!-- TỐI ƯU BẰNG JS -->
+							<!-- <li class="video-content" id="main1-img0">
+								<div class="video-content1">
+									<video controls="" >
+								      <source src="../video/video1-0.mp4" type="video/mp4">
+								    </video>
+								</div>
+								<div class="video-content2">
+									<p>(君の名は / Kimi no Na wa) Nandemonaiya - Kamishiraishi Mone (Maxone × 夏璃夜 Remix) ♪</p>
+									<div class="video-content2-1">
+										<span class="number-view">1.412.756 lượt xem...</span>
+										<span class="video-like"><img  src="../img/video-like.png"> 25 N THÍCH</span>
+										<span class="video-dislike"><img  src="../img/video-dislike.png">KHÔNG THÍCH</span>
+										<span class="video-share"><img src="../img/video-share.png">CHIA SẺ</span>
+											<div class="bg11"></div>
+											<div class="video-share-div">
+												<div class="video-share-div-1">
+													<span>Chia sẻ</span>
+													<span class="close-share-video">&times;</span>
+												</div>
+												<div class="video-share-div-2">
+													<div class="btn-share-video">
+														<button class="back-share-video"><i class="fal fa-chevron-left"></i></button>
+													</div>
+													<div class="slider-video">
+														<div class="slider-share-video">
+															<ol class="slider-share-video-ol">
+																<a href=""><i style="background-color:#F4F4F4;color:#0000008c;" class="far fa-code"></i><span>Nhúng</span></a> 
+																<a href="https://www.facebook.com/"><i style="background-color:#3B5998;color:white;" class="fab fa-facebook-f"></i><span>Facebook</span></a> 
+																<a href="https://www.whatsapp.com/"><i style="background-color:#25D366;color:white;" class="fab fa-whatsapp"></i><span>WhatsApp</span></a> 
+																<a href="https://twitter.com/"><i style="background-color:#1DA1F2;color:white;" class="fab fa-twitter"></i><span>Twitter</span></a> 
+																<a href="https://www.google.com/intl/vi/gmail/about/"><i style="background-color:#888888;color:white;" class="fas fa-envelope"></i><span>Email</span></a> 
+																<a href="https://accounts.kakao.com/"><i style="background-color:#FFE812;color:white;" class="far fa-comment"></i><span>카카오스토리</span></a> 
+															</ol>
+															<ol class="slider-share-video-ol">
+																<a href="https://www.reddit.com/"><i style="background-color:#FF4500;color:white;" class="fab fa-reddit-alien"></i><span>Reddit</span></a>
+																<a href="https://vk.com/"><i style="background-color:#4680C2;color:white;" class="fab fa-vk"></i><span>ВКонта кте</span></a>
+																<a href="https://ok.ru/"><i style="background-color:#F7931F;color:white;" class="fab fa-odnoklassniki"></i><span>Однокл ассники</span></a>
+																<a href="https://www.pinterest.com/"><i style="background-color:#BD081C;color:white;" class="fab fa-pinterest"></i><span>Pinterest</span></a>
+																<a href="https://www.blogger.com/"><i style="background-color:#F57D00;color:white;" class="fab fa-blogger-b"></i><span>Blogger</span></a>
+																<a href="https://www.tumblr.com/"><i style="background-color:#35465C;color:white;" class="fab fa-tumblr"></i><span>Tumblr</span></a>
+															</ol>
+															<ol class="slider-share-video-ol">
+																<a href="https://www.blogger.com/"><i style="background-color:#F57D00;color:white;" class="fab fa-blogger-b"></i><span>Blogger</span></a>
+																<a href="https://www.tumblr.com/"><i style="background-color:#35465C;color:white;" class="fab fa-tumblr"></i><span>Tumblr</span></a>
+																<a href="https://www.linkedin.com/"><i style="background-color:#0077B5;color:white;" class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+																<a href="https://www.skyrock.com/"><i style="background-color:#212121;color:white;" class="far fa-star"></i><span>Skyrock</span></a>
+																<a href="https://mix.com/"><i style="background-color:#FF8226;color:white;" class="fab fa-mix"></i><span>Mix</span></a>
+																<a href="https://www.goo.ne.jp/"><i style="background-color:#CE2E2D;color:white;" class="fab fa-goodreads-g"></i><span>goo</span></a>
+															</ol>
+														</div>
+													</div>
+													<div class="btn-share-video">
+														<button class="next-share-video"><i class="fal fa-chevron-right"></i></button>
+													</div>
+												</div>
+												<div class="video-share-div-3">
+													<form>
+														<input type="" name="" value="https://youtu.be/miFXF4P-eoM">
+														<button class="video-share-copy">SAO CHÉP</button>
+													</form>
+												</div>
+												<div class="video-share-div-4">
+													<input type="checkbox" name="" class="video-share-check">
+													<p>Bắt đầu tại <span>0:02</span></p>
+												</div>
+											</div>	 
+										<span class="video-save"><img src="../img/video-save.png">LƯU</span>
+											<div class="bg12"></div>
+											<div class="video-save-div">
+												<div class="video-save-div-1">
+													<p>Lưu vào...</p>
+													<span class="close-save-video">&times;</span>
+												</div>
+												<div class="video-save-div-2">
+													<ul>
+														<li><input type="checkbox" name=""><span>Hay</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Xem Rồi</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Toán</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Music</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Code</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Php MySql</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Laravel</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Javascript</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Vuejs</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Anime Traler</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Phim</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Xem sau</span><i class="far fa-lock-alt"></i></li>
+														<li><input type="checkbox" name=""><span>Thích</span><i class="far fa-lock-alt"></i></li>
+													</ul>
+												</div>
+												<div class="video-save-div-3"><i class="fal fa-plus"></i><span>Tạo danh sách phát mới</span></div>
+											</div>
+
+										<div class="bg12a"></div>
+										<button class="video-btn"><img src="../img/video-dot.png">
+											<div>
+												<ul class="video-btn-div">
+													<li><i class="far fa-flag-alt"></i><span>Báo vi phạm</span></li>
+													<li><i class="far fa-keyboard"></i><span>Mở bản chép lời</span></li>
+												</ul>
+											</div>
+										</button>
+												
+									</div>
+								</div>
+								<div class="video-content3">
+									<div class="video-content3-1">
+										<img src="../img/img1-b0.jpg">
+										<p>
+											<span>StarlingEDM <i class="fas fa-check-circle"></i></span>
+											<span>484 N người đăng kí</span>
+										</p>
+										<div>
+											<button class="subscribe">ĐĂNG KÝ</button>
+											<button class="subscribed">ĐÃ ĐĂNG KÝ</button>
+												<div class="bg14"></div>
+												<div class="subscribed-div">
+													<ul>
+														<li>Hủy đăng ký StarlingEDM?</li>
+														<li>
+															<span class="close-subscribed-div">HỦY</span>
+															<span class="cancel-subscribe">HỦY ĐĂNG KÝ</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="bg15"></div>
+											<span class="subscribed-bell" tick4k="0"><i class="far fa-bell"></i>
+												<div>
+													<ul class="subscribed-bell-div">
+														<li><i class="fas fa-bell"></i>Tất cả</li>
+														<li><i class="far fa-bell"></i>Dành riêng cho bạn</li>
+														<li><i class="far fa-bell-slash"></i>Không nhận thông báo</li>
+													</ul>
+												</div>
+											</span>
+										</div>
+									</div>
+									<div class="video-content3-2">
+										<p>Top Nhạc Tik Tok Tháng 5<br>
+											Nandemonaiya - Kamishiraishi Mone [Vietsub] [Engsub] [Kanji] [Romaji]<br>
+											Nandemonaiya - Maxone Remix [Vietsub] [Engsub] [Kanji] [Romaji]<br>
+										</p>
+									</div>
+									<div class="video-content3-3">
+										<p>
+											Nandemonaiya (Movie Version) by RADWIMPS from the soundtrack of the 2016 Makoto Shinkai film<br> Kimi No Na Wa (Your Name).<br>
+										</p>
+										<p>Top Nhạc Tik Tok Tháng 5<br>
+											Nandemonaiya - Kamishiraishi Mone [Vietsub] [Engsub] [Kanji] [Romaji]<br>
+											Nandemonaiya - Maxone Remix [Vietsub] [Engsub] [Kanji] [Romaji]<br>
+										</p>
+										<p></p>
+										<p></p>
+										<p></p>
+										<p></p>
+										<p></p>
+									</div>
+									<div class="video-content3-4">
+										<button class="close-video-content3-4" tickkk="0">HIỆN THÊM</button>
+									</div>
+								</div>
+
+								<div class="video-content4">
+									<div class="video-content4-1">
+										<span>5 bình luận</span>
+											<div class="bg16"></div>
+										<button tick5k = "0" class="sort-comments"><i class="far fa-stream"></i><span>SẮP XẾP THEO</span>
+											<div>
+												<ul class="sort-comments-div">
+													<li>Bình luận hàng đầu</li>
+													<li>Mới nhất xếp trước</li>
+												</ul>
+											</div>
+										</button>
+									</div>
+									<div class="video-content4-2">
+										<ol><img src="../img/profile.jpg"></ol>
+										<form>
+											<ol><input class="input-coment" type="" name="" placeholder="Bình luận công khai..."></ol>
+											<p><button class="close-input-coment">HỦY</button><button type="submit">BÌNH LUẬN</button></p>
+										</form>
+									</div>
+								</div>
+								<div class="video-content5">
+									<ol class="video-content5-comented">
+										<div class="video-content5-1">
+											<ol><img src="../img/img1-b2.jpg"></ol>
+											<p>
+												<span>Orinn EDM Plus</span><span>1 ngày trước</span>
+												<span>Nhạc hay waw</span>
+											</p>
+											<div class="bg17"></div>
+											<button tick6k="0" class="report-coment"><i class="fas fa-ellipsis-v"></i>
+												<div>
+													<ul class="report-coment-div">
+														<li><i class="far fa-flag-alt"></i> Báo cáo</li>
+													</ul>
+												</div>
+											</button>
+										</div>
+										<div class="video-content5-2">
+											<span class="video-like-coment"><img  src="../img/video-like.png">1 N</span>
+											<span class="video-dislike-coment"><img  src="../img/video-dislike.png"></span>
+											<span>PHẢN HỒI</span>
+										</div>
+									</ol>
+
+									<ol class="video-content5-comented">
+										<div class="video-content5-1">
+											<ol><img src="../img/img1-b2.jpg"></ol>
+											<p>
+												<span>Orinn EDM Plus</span><span>1 ngày trước</span>
+												<span>Nhạc hay waw</span>
+											</p>
+											<div class="bg17"></div>
+											<button tick6k="0" class="report-coment"><i class="fas fa-ellipsis-v"></i>
+												<div>
+													<ul class="report-coment-div">
+														<li><i class="far fa-flag-alt"></i> Báo cáo</li>
+													</ul>
+												</div>
+											</button>
+										</div>
+										<div class="video-content5-2">
+											<span class="video-like-coment"><img  src="../img/video-like.png">1 N</span>
+											<span class="video-dislike-coment"><img  src="../img/video-dislike.png"></span>
+											<span>PHẢN HỒI</span>
+										</div>
+									</ol>
+
+									<ol class="video-content5-comented">
+										<div class="video-content5-1">
+											<ol><img src="../img/img1-b2.jpg"></ol>
+											<p>
+												<span>Orinn EDM Plus</span><span>1 ngày trước</span>
+												<span>Nhạc hay waw</span>
+											</p>
+											<div class="bg17"></div>
+											<button tick6k="0" class="report-coment"><i class="fas fa-ellipsis-v"></i>
+												<div>
+													<ul class="report-coment-div">
+														<li><i class="far fa-flag-alt"></i> Báo cáo</li>
+													</ul>
+												</div>
+											</button>
+										</div>
+										<div class="video-content5-2">
+											<span class="video-like-coment"><img  src="../img/video-like.png">1 N</span>
+											<span class="video-dislike-coment"><img  src="../img/video-dislike.png"></span>
+											<span>PHẢN HỒI</span>
+										</div>
+									</ol>
+
+									<ol class="video-content5-comented">
+										<div class="video-content5-1">
+											<ol><img src="../img/img1-b2.jpg"></ol>
+											<p>
+												<span>Orinn EDM Plus</span><span>1 ngày trước</span>
+												<span>Nhạc hay waw</span>
+											</p>
+											<div class="bg17"></div>
+											<button tick6k="0" class="report-coment"><i class="fas fa-ellipsis-v"></i>
+												<div>
+													<ul class="report-coment-div">
+														<li><i class="far fa-flag-alt"></i> Báo cáo</li>
+													</ul>
+												</div>
+											</button>
+										</div>
+										<div class="video-content5-2">
+											<span class="video-like-coment"><img  src="../img/video-like.png">1 N</span>
+											<span class="video-dislike-coment"><img  src="../img/video-dislike.png"></span>
+											<span>PHẢN HỒI</span>
+										</div>
+									</ol>
+
+									<ol class="video-content5-comented">
+										<div class="video-content5-1">
+											<ol><img src="../img/img1-b2.jpg"></ol>
+											<p>
+												<span>Orinn EDM Plus</span><span>1 ngày trước</span>
+												<span>Nhạc hay waw</span>
+											</p>
+											<div class="bg17"></div>
+											<button tick6k="0" class="report-coment"><i class="fas fa-ellipsis-v"></i>
+												<div>
+													<ul class="report-coment-div">
+														<li><i class="far fa-flag-alt"></i> Báo cáo</li>
+													</ul>
+												</div>
+											</button>
+										</div>
+										<div class="video-content5-2">
+											<span class="video-like-coment"><img  src="../img/video-like.png">1 N</span>
+											<span class="video-dislike-coment"><img  src="../img/video-dislike.png"></span>
+											<span>PHẢN HỒI</span>
+										</div>
+									</ol>
+								</div>
+							</li>
+
+
+
+
+
+
+
+
+
+
+
+							<li class="video-content" id="main1-img1">video1-1</li>
+							<li class="video-content" id="main1-img2">video1-2</li>
+							<li class="video-content" id="main1-img3">video1-3</li>
+
+							<li class="video-content" id="main1-img4">video1-4</li>
+							<li class="video-content" id="main1-img5">video1-5</li>
+							<li class="video-content" id="main1-img6">video1-6</li>
+							<li class="video-content" id="main1-img7">video1-7</li>
+
+							<li class="video-content" id="main1-img8">video1-8</li>
+							<li class="video-content" id="main1-img9">video1-9</li>
+							<li class="video-content" id="main1-img10">video1-10</li>
+							<li class="video-content" id="main1-img11">video1-11</li> -->
+
+							<!--  -->
+
+							<!-- <li class="video-content" id="main2-img0">video2-0</li>
+							<li class="video-content" id="main2-img1">video2-1</li>
+							<li class="video-content" id="main2-img2">video2-2</li>
+							<li class="video-content" id="main2-img3">video2-3</li> -->
+
+							<!--  -->
+
+							<!-- <li class="video-content" id="main3-img0">video3-0</li>
+							<li class="video-content" id="main3-img1">video3-1</li>
+							<li class="video-content" id="main3-img2">video3-2</li>
+							<li class="video-content" id="main3-img3">video3-3</li> -->
+						</div>
+
+
+
+						<div id="watch-content-right">
+							<ul>
+
+
+
+								<!-- TỐI ƯU BẰNG JS -->
+								<!-- <li class="watch-content-right-li">
+									<p class="content-right-img"><img src="../img/img1-a2.jpg">
+										<span class="content-right-span content-right-span1"><i class="far fa-clock"></i></span>
+										<span class="content-right-span content-right-span2"><i class="fas fa-list"></i></span>
+										<span class="content-right-span content-right-span3">03:30</span>
+										<span class="content-right-span4">Xem sau</span>
+										<span class="content-right-span5">Thêm vào danh sách chờ</span>
+									</p>
+									<div class="content-right-div">
+										<ol class="content-right-ol1">
+											<span>EDM TikTok Hay 2022 ♫ BXH Nhạc Trẻ Remix Hay Nhất Hiện...</span>
+											<div class="bg18"></div>
+											<button tick8k="0" class="content-right-btn"><i class="fas fa-ellipsis-v"></i>
+												<div>
+					                                <ul class="video-ul-right">
+						                                <li class="video-li-right"><img src="../img/video-play-list.png">Thêm vào danh sách chờ</li>
+						                                <li class="video-li-right"><img src="../img/video-clock.png">Lưu vào dánh sách Xem sau</li>
+						                                <li class="video-li-right"><img src="../img/video-add-list.png">Lưu vào danh sách </li>
+						                                <li class="video-li-right"><img src="../img/video-not.png">Không quan tâm</li>
+						                                <li class="video-li-right"><img src="../img/video-forbidden.png">Không đề xuất kênh này</li>
+						                                <li class="video-li-right"><img src="../img/video-flag.png">Báo cáo vi phạm</li>
+					                                </ul>
+					                            </div>
+											</button>
+										</ol>
+										<ol class="content-right-ol2">Orinn EDM Plus <i class="fas fa-check-circle"></i></ol>
+										<ol class="content-right-ol3">22 N lượt xem<i class="fas fa-circle"></i>2 tuần trước<span>Mới</span></ol>
+									</div>
+								</li> -->
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+					
+					
+			</div>
+
+			<!-- RIÊNG -->
+ 
+
+            <!-- XONG Index.html Version 1 -->
+
+
+
+
+		</div>
+	</div>
+
+	 
+
+
+	<script type="text/javascript" src="../sidebar.js"></script>
+	
+	<!-- RIÊNG -->
+	<script type="text/javascript" src="appindex.js"></script>
+	<!-- RIÊNG -->
+
+     
+</body>
+</html>
